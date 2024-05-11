@@ -74,6 +74,16 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
 function FuncJeu(jeu) {
     console.log(jeu);
     document.cookie = "jeu="+jeu;
+    var acc = document.getElementById("accblock");
+    var ac = document.getElementById("acblock");
+    if(jeu == "acc") {
+        ac.style.display = "none";
+        acc.style.display = "block";
+    } else if(jeu == "ac") {
+        acc.style.display = "none";
+        ac.style.display = "block";
+    }
+    
 }
 
 function FuncCircuit(circuit) {
