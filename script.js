@@ -73,7 +73,7 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
 
 function FuncJeu(jeu) {
     console.log(jeu);
-    document.cookie = "jeu="+jeu;
+    document.cookie = "jeu="+jeu+"; max-age=600;";
     var acc = document.getElementById("accblock");
     var ac = document.getElementById("acblock");
     if(jeu == "acc") {
@@ -88,10 +88,10 @@ function FuncJeu(jeu) {
 
 function FuncCircuit(circuit) {
     console.log(circuit);
-    document.cookie = "circuit="+circuit;
+    document.cookie = "circuit="+circuit+"; max-age=600;";
 }
 
 function FuncVoiture(voiture) {
     console.log(voiture);
-    document.cookie = "voiture="+voiture;
+    document.cookie = "voiture="+voiture+"; max-age=600;";
 }
