@@ -73,25 +73,25 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
 
 function FuncJeu(jeu) {
     console.log(jeu);
-    document.cookie = "jeu="+jeu+"; max-age=600;";
+    document.cookie = "jeu=" + jeu + "; max-age=600;";
     var acc = document.getElementById("accblock");
     var ac = document.getElementById("acblock");
-    if(jeu == "acc") {
+    if (jeu == "acc") {
         ac.style.display = "none";
         acc.style.display = "block";
-    } else if(jeu == "ac") {
+    } else if (jeu == "ac") {
         acc.style.display = "none";
         ac.style.display = "block";
     }
-    
+
 }
 
 function FuncCircuit(circuit) {
     console.log(circuit);
-    document.cookie = "circuit="+circuit+"; max-age=600;";
+    document.cookie = "circuit=" + circuit + "; max-age=600;";
 }
 
 function FuncVoiture(voiture) {
     console.log(voiture);
-    document.cookie = "voiture="+voiture+"; max-age=600;";
+    document.cookie = "voiture=" + voiture + "; max-age=600;";
 }
