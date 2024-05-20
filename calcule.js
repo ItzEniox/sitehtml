@@ -5,57 +5,113 @@ var voiture = msg.req.cookies.voiture; // FuncVoiture('z')
 var timecourse = (parseInt(msg.payload["t-heure"]) * 60) + (parseInt(msg.payload["t-heure"]));
 
 //            [L par tour, Temps(décimal)]
+const brandshatch_court = undefined;
+const lagunaseca = undefined;
+const brandshatch_gp = undefined;
+const spa = undefined;
+const limerock = undefined;
+const hockenheim = undefined;
+const mugello = undefined;
+const nurburgring = undefined;
+const catalunyagp = undefined;
+const donington = undefined;
+const kazanring = undefined;
+const portimao = undefined;
+const suzuka = undefined;
+const redbullring = undefined;
+const silverstone = undefined;
 
-//MX CUP AC
-const brandshatch_court = ["0,7", "0.88"];
-const lagunaseca = ["1.33", "1.67"];
-const brandshatch_gp = ["1.33", "1.67"];
-const spa = ["2.45", "2.87"];
-const limerock = ["0.77", "0.97"];
-const hockenheim = ["1.70", "2.07"];
-const mugello = ["1.83", "2.17"];
-const nurburgring = ["1.32", "1.67"];
-const catalunyagp = ["1.68", "2.13"];
-const donington = ["0.98", "1.33"];
-const kazanring = ["1.2", "1.62"];
-const portimao = ["1.67", "2.12"];
-const suzuka = ["", ""];
 
+if(voiture == "mazda cup") {
+    brandshatch_court = ["0,7", "0.88"];
+    lagunaseca = ["1.33", "1.67"];
+    brandshatch_gp = ["1.33", "1.67"];
+    spa = ["2.45", "2.87"];
+    limerock = ["0.77", "0.97"];
+    hockenheim = ["1.70", "2.07"];
+    mugello = ["1.83", "2.17"];
+    nurburgring = ["1.32", "1.67"];
+    catalunyagp = ["1.68", "2.13"];
+    donington = ["0.98", "1.33"];
+    kazanring = ["1.2", "1.62"];
+    portimao = ["1.67", "2.12"];
+    suzuka = ["", ""];
+} 
 
-if (jeu == "laguna seca") {
-    fuelpertour = lagunaseca[0];
-    tempspartour = lagunaseca[1];
-} else if (jeu == "brandshatch_court") {
-    fuelpertour = brandshatch_court[0]
-    tempspartour = brandshatch_court[1]
-} else if (jeu == "brandshatch_gp") {
-    fuelpertour = brandshatch_gp[0]
-    tempspartour = brandshatch_gp[1]
-} else if (jeu == "spa") {
-    fuelpertour = spa[0]
-    tempspartour = spa[1]
-} else if (jeu == "limerock") {
-    fuelpertour = limerock[0]
-    tempspartour = limerock[1]
-} else if (jeu == "hockenheim") {
-    fuelpertour = hockenheim[0]
-    tempspartour = hockenheim[1]
-} else if (jeu == "mugello") {
-    fuelpertour = mugello[0]
-    tempspartour = mugello[1]
-} else if (jeu == "nurburgring") {
-    fuelpertour = nurburgring[0]
-    tempspartour = nurburgring[1]
+else if(voiture == "f3") {
+    mugello = ["2.55", "1.62"];
+    redbullring = ["2.2", "1.47"];
+    silverstone = ["2.88", "1.78"];
+    catalunyagp = [" 2.35", "1.6"];
+    hockenheim = ["2.27", "1.53"];
 }
 
 
 
-//F3 AC
-mugello = ["2.55", "1.62"];
-const redbullring = ["2.2", "1.47"];
-const silverstone = ["2.88", "1.78"];
+if(jeu == "ac") {
+    if(voiture == "mazda cup") {
+        if (circuit == "laguna seca") {
+            fuelpertour = lagunaseca[0];
+            tempspartour = lagunaseca[1];
+        } else if (circuit == "brandshatch_court") {
+            fuelpertour = brandshatch_court[0]
+            tempspartour = brandshatch_court[1]
+        } else if (circuit == "brandshatch_gp") {
+            fuelpertour = brandshatch_gp[0]
+            tempspartour = brandshatch_gp[1]
+        } else if (circuit == "spa") {
+            fuelpertour = spa[0]
+            tempspartour = spa[1]
+        } else if (circuit == "limerock") {
+            fuelpertour = limerock[0]
+            tempspartour = limerock[1]
+        } else if (circuit == "hockenheim") {
+            fuelpertour = hockenheim[0]
+            tempspartour = hockenheim[1]
+        } else if (circuit == "mugello") {
+            fuelpertour = mugello[0]
+            tempspartour = mugello[1]
+        } else if (circuit == "nurburgring") {
+            fuelpertour = nurburgring[0]
+            tempspartour = nurburgring[1]
+        } else if (circuit == "catalunyagp") {
+            fuelpertour = catalunyagp[0]
+            tempspartour = catalunyagp[1]
+        } else if (circuit == "donington") {
+            fuelpertour = donington[0]
+            tempspartour = donington[1]
+        } else if (circuit == "kazanring") {
+            fuelpertour = kazanring[0]
+            tempspartour = kazanring[1]
+        } else if (circuit == "portimao") {
+            fuelpertour = portimao[0]
+            tempspartour = portimao[1]
+        } else if (circuit == "suzuka") {
+            fuelpertour = suzuka[0]
+            tempspartour = suzuka[1]
+        } 
+        
+    }
 
-
+    else if (voiture == "f3") {
+        if (circuit == "mugello") {
+            fuelpertour = mugello[0];
+            tempspartour = mugello[1];
+        } else if (circuit == "redbullring") {
+            fuelpertour = redbullring[0]
+            tempspartour = redbullring[1]
+        } else if (circuit == "silverstone") {
+            fuelpertour = silverstone[0]
+            tempspartour = silverstone[1]
+        } else if (circuit == "catalunyagp") {
+            fuelpertour = catalunyagp[0]
+            tempspartour = catalunyagp[1]
+        } else if (circuit == "hockenheim") {
+            fuelpertour = hockenheim[0]
+            tempspartour = hockenheim[1]
+        } 
+    }
+}   
 
 
 var fuelpertour = 0;
