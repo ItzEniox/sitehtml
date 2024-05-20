@@ -5,21 +5,21 @@ var voiture = msg.req.cookies.voiture; // FuncVoiture('z')
 var timecourse = (parseInt(msg.payload["t-heure"]) * 60) + (parseInt(msg.payload["t-heure"]));
 
 //            [L par tour, Temps(décimal)]
-const brandshatch_court = undefined;
-const lagunaseca = undefined;
-const brandshatch_gp = undefined;
-const spa = undefined;
-const limerock = undefined;
-const hockenheim = undefined;
-const mugello = undefined;
-const nurburgring = undefined;
-const catalunyagp = undefined;
-const donington = undefined;
-const kazanring = undefined;
-const portimao = undefined;
-const suzuka = undefined;
-const redbullring = undefined;
-const silverstone = undefined;
+var brandshatch_court = undefined;
+var lagunaseca = undefined;
+var brandshatch_gp = undefined;
+var spa = undefined;
+var limerock = undefined;
+var hockenheim = undefined;
+var mugello = undefined;
+var nurburgring = undefined;
+var catalunyagp = undefined;
+var donington = undefined;
+var kazanring = undefined;
+var portimao = undefined;
+var suzuka = undefined;
+var redbullring = undefined;
+var silverstone = undefined;
 
 
 if(voiture == "mazda cup") {
