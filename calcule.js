@@ -50,7 +50,7 @@ else if(voiture == "f3") {
 
 if(jeu == "ac") {
     if(voiture == "mazda cup") {
-        if (circuit == "laguna seca") {
+        if (circuit == "lagunaseca") {
             fuelpertour = lagunaseca[0];
             tempspartour = lagunaseca[1];
         } else if (circuit == "brandshatch_court") {
