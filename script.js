@@ -94,4 +94,30 @@ function FuncCircuit(circuit) {
 function FuncVoiture(voiture) {
     console.log(voiture);
     document.cookie = "voiture=" + voiture + "; max-age=600;";
+
+    var astomMartin = document.getElementById("Astom Martin Vantage GT3");
+    var bentley = document.getElementById("Bentley GT3");
+    var bmwm = document.getElementById("BMW M4 GT3");
+    var audirhuit = document.getElementById("Audi R8 LMS Evo II");
+    var mustanggt = document.getElementById("Mustang gt3");
+    var honda = document.getElementById("Honda NSX GT3 Evo");
+    var lambo = document.getElementById("Lamborghini Huracan GT3 EVO2");
+    var missan = document.getElementById("Nissan GT-R Nismo GT3");
+    var ferrarigt_296_acc = document.getElementById("ferrari 296 gt3");
+    var lexusrcfgt = document.getElementById("lexus rc f gt3");
+    var mcLaren = document.getElementById("McLaren 720S GT3 Evo");
+    var porschegt = document.getElementById("porsche 992 gt3");
+    var mercedesamg = document.getElementById("Mercedes-AMG GT3 Evo");
+    
+    var gtm = document.getElementById("GT-M");
+    var urdloire = document.getElementById("URD Loire");
+    var bmwmph = document.getElementById("BMW MP-H");
+    var tcr = document.getElementById("tcr");
+    var mazdacup = document.getElementById("mazda cup");
+    var ferrarigt_296_ac = document.getElementById("ferrari 296 gt3");
+    var lmp3 = document.getElementById("lmp3");
+    var f3 = document.getElementById("f3");
+    var gt4 = document.getElementById("GT4");
+
+    
 }
